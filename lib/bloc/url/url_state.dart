@@ -6,6 +6,8 @@ sealed class UrlState extends Equatable {
 }
 
 final class UrlInitial extends UrlState {
+  const UrlInitial({required super.url});
+
   @override
   List<Object> get props => [];
 }

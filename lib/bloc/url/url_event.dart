@@ -4,7 +4,7 @@ abstract class UrlEvent extends Equatable {
   const UrlEvent();
 
   @override
-  List<Object> get props => [url];
+  List<Object> get props => [];
 }
 
 class VerifyUrl extends UrlEvent {
@@ -13,5 +13,5 @@ class VerifyUrl extends UrlEvent {
   const VerifyUrl({required this.url});
 
   @override
-  List<Object> get props => [url];
+  List<Object> get props => [url!];
 }
